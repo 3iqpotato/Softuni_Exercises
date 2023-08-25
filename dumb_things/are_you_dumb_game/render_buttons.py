@@ -1,6 +1,6 @@
 from tkinter import Button
-from are_you_dumb_game.start_screen import window, frame
-from are_you_dumb_game.cleaning import clean
+from dumb_things.are_you_dumb_game.start_screen import window, frame
+from dumb_things.are_you_dumb_game.cleaning import clean
 import random
 
 

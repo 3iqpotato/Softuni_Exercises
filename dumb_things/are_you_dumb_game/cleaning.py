@@ -1,4 +1,4 @@
-from are_you_dumb_game.render_buttons import frame
+from dumb_things.are_you_dumb_game.render_buttons import frame
 
 
 def clean():
