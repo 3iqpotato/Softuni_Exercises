@@ -1,0 +1,12 @@
+from project.delicacies.delicacy import Delicacy
+
+
+class Gingerbread(Delicacy):
+    def __init__(self, name, price):
+        super().__init__(name, 200, price)
+
+    def details(self):
+        return f"Gingerbread {self.name}: 200g - {self.price:.2f}lv."
+
+# a = Gingerbread('bob', 10)
+# print(a.details())
