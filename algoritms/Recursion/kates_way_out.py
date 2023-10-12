@@ -20,10 +20,6 @@ def calculate_moves(lab, r, c, count_moves):
     if res:
         return res
 
-    # return (calculate_moves(lab, r+1, c, count_moves),
-    #     calculate_moves(lab, r-1, c, count_moves),
-    #     calculate_moves(lab, r, c+1, count_moves),
-    #     calculate_moves(lab, r, c-1, count_moves),)
 
 
 def ketes_pos(lab):
@@ -53,3 +49,10 @@ else:
 # ## k#
 # ## ###
 # ## ###
+# 6
+# ## ####
+# #  ####
+# #     #
+# #k#####
+# #######
+# #######
