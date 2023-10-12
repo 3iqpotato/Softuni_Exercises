@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drowing</title>
+</head>
+<body>
+    <h1 align="center" style="color: green; font-size: 69px">
+        Drowing circle
+    </h1>
+
+    <form name = "data_in">
+        X= <input type="number" name = "X"> <br>
+        Y= <input type="number" name = "Y"> <br>
+        R= <input type="number" name = "R"> <br>
+    </form>
+
+    <button onclick="drow()">
+        Drow
+    </button><br>
+
+    <canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;"></canvas>
+    <script>
+        function drow() {
+            let x = document.data_in.X.value;
+            var y = document.data_in.Y.value;
+            var r = document.data_in.R.value;
+
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, 2 * Math.PI);
+            ctx.stroke();
+        }
+    </script>
+
+
+</body>
+</html>
